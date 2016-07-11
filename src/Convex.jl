@@ -32,7 +32,7 @@ include("atoms/affine/dot.jl")
 include("atoms/affine/reshape.jl")
 include("atoms/affine/trace.jl")
 include("atoms/affine/conv.jl")
-<<<<<<< HEAD
+#<<<<<<< HEAD
 ### lp atoms
 include("atoms/lp_cone/abs.jl")
 include("atoms/lp_cone/maximum.jl")
@@ -41,6 +41,7 @@ include("atoms/lp_cone/max.jl")
 include("atoms/lp_cone/min.jl")
 include("atoms/lp_cone/sumlargest.jl")
 include("atoms/lp_cone/dotsort.jl")
+
 =======
 include("atoms/affine/real_imag.jl")
 include("atoms/norm.jl")
@@ -53,7 +54,7 @@ include("atoms/maximum.jl")
 include("atoms/minimum.jl")
 include("atoms/max.jl")
 include("atoms/min.jl")
->>>>>>> fcb167dd1c1fa62737307eb1afe2dddbb42daef3
+#>>>>>>> fcb167dd1c1fa62737307eb1afe2dddbb42daef3
 
 ### SOC atoms
 include("atoms/second_order_cone/norm.jl") # also includes some lp atoms
