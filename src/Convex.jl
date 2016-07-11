@@ -42,7 +42,7 @@ include("atoms/lp_cone/min.jl")
 include("atoms/lp_cone/sumlargest.jl")
 include("atoms/lp_cone/dotsort.jl")
 
-=======
+
 include("atoms/affine/real_imag.jl")
 include("atoms/norm.jl")
 include("atoms/sumlargest.jl")
