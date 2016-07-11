@@ -5,6 +5,7 @@
 # Please read expressions.jl first.
 #############################################################################
 
+# k >= min(num_cols, num_rows) || k <= -min(num_rows, num_cols)
 import Base.diag
 export diag
 
@@ -28,6 +29,8 @@ type DiagAtom <: AbstractExpr
     return new(:diag, hash((children, k)), children, (minimum(x.size) - k, 1), k)
   end
 end
+## Type Definition Ends
+
 
 function sign(x::DiagAtom)
   return sign(x.children[1])
@@ -48,7 +51,9 @@ function evaluate(x::DiagAtom)
   return diag(evaluate(x.children[1]), x.k)
 end
 
+## API begins
 diag(x::AbstractExpr, k::Int=0) = DiagAtom(x, k)
+## API ends
 
 # Finds the "k"-th diagonal of x as a column vector
 # If k == 0, it returns the main diagonal and so on
