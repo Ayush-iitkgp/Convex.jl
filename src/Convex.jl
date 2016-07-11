@@ -32,6 +32,7 @@ include("atoms/affine/dot.jl")
 include("atoms/affine/reshape.jl")
 include("atoms/affine/trace.jl")
 include("atoms/affine/conv.jl")
+include("atoms/affine/real_imag.jl")
 #<<<<<<< HEAD
 ### lp atoms
 include("atoms/lp_cone/abs.jl")
@@ -43,10 +44,10 @@ include("atoms/lp_cone/sumlargest.jl")
 include("atoms/lp_cone/dotsort.jl")
 
 
-include("atoms/affine/real_imag.jl")
-include("atoms/norm.jl")
-include("atoms/sumlargest.jl")
-include("atoms/dotsort.jl")
+
+#include("atoms/norm.jl")
+#include("atoms/sumlargest.jl")
+#include("atoms/dotsort.jl")
 
 ### elementwise atoms
 include("atoms/abs.jl")
