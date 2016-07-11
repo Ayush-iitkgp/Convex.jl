@@ -50,11 +50,11 @@ include("atoms/lp_cone/dotsort.jl")
 #include("atoms/dotsort.jl")
 
 ### elementwise atoms
-include("atoms/abs.jl")
-include("atoms/maximum.jl")
-include("atoms/minimum.jl")
-include("atoms/max.jl")
-include("atoms/min.jl")
+#include("atoms/abs.jl")
+#include("atoms/maximum.jl")
+#include("atoms/minimum.jl")
+#include("atoms/max.jl")
+#include("atoms/min.jl")
 #>>>>>>> fcb167dd1c1fa62737307eb1afe2dddbb42daef3
 
 ### SOC atoms
